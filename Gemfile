@@ -3,6 +3,7 @@ ruby '2.2.2'
 
 gem 'spree', github: 'spree/spree'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise'
+gem 'spree_i18n', git: 'git://github.com/spree/spree_i18n.git'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
