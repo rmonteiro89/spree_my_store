@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160219093412) do
+ActiveRecord::Schema.define(version: 20160219101252) do
 
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string   "slug",                      null: false
@@ -964,6 +964,7 @@ ActiveRecord::Schema.define(version: 20160219093412) do
     t.datetime "updated_at"
     t.integer  "stock_items_count",                          default: 0,     null: false
     t.datetime "discontinue_on"
+    t.decimal  "sale_price",        precision: 8,  scale: 2
   end
 
   add_index "spree_variants", ["deleted_at"], name: "index_spree_variants_on_deleted_at"
